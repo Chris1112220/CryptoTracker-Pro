@@ -1,4 +1,5 @@
-from app import create_app  # ✅ this will now work because 'app' is inside 'backend'
+
+from app import create_app
 
 app = create_app()
 

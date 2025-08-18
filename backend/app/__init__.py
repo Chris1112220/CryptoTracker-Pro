@@ -1,19 +1,12 @@
-from flask import Flask
-from flask_sqlalchemy import SQLAlchemy
-from flask_cors import CORS
-from .config import Config
 
-db = SQLAlchemy()
+from flask import Flask
 
 
 def create_app():
     app = Flask(__name__)
-    app.config.from_object(Config)
 
-    db.init_app(app)
-    CORS(app)
-
-    from .routes.auth_routes import auth_bp
-    app.register_blueprint(auth_bp)
+    @app.route("/health")
+    def health():
+        return {"status": "Up and running"}, 200
 
     return app
