@@ -18,4 +18,7 @@ def create_app():
     def health():
         return {"status": "Up and running"}, 200
 
+    from app.routes import api
+    app.register_blueprint(api, url_prefix="/api")
+
     return app

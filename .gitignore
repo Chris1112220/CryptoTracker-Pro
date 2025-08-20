@@ -15,6 +15,11 @@ venv/
 # Logs
 *.log
 
-# SQLite (if we test locally)
+# SQLite databases (local dev only)
 *.sqlite3
+*.db
 instance/
+
+# Environment / secrets
+.env
+*.env
