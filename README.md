@@ -13,7 +13,9 @@ This app will allow users to:
 ---
 
 ## 📌 Project Status
-🚧 Work in Progress – currently setting up Flask backend and database.
+🚧 Work in Progress – Flask backend and database models created.  
+Currently testing database with user and holding records.
+
 
 ---
 
